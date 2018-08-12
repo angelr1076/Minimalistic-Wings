@@ -13,12 +13,9 @@ $(document).ready(function(){
     },
     dataType: "json",
     success: function(response) {
-        "<div class='flex-container'>"
+        "<div id='flex-container'>"
         for (var i = 0; i < response.products.length; i++) {
-            $('.row').append("<div class='image'>" + "<img src=" + response.products[i].images[0].src + "<div class='product'>" + response.products[i].title + "<div class='price'>" + '$ ' + response.products[i].variants[0].price + "</div>" + "</div>" + "</div>");
-            // $('.row').append("<div class='product'>" + response.products[i].title + "</div>");
-            // $('.row').append("<div class='price'>" + '$ ' + response.products[i].variants[0].price + "</div>");
-            // $('#container').append("<div class='description'>" + response.products[i].body_html + "</div>")
+            $('.row').append("<div class='image'>" + "<img src=" + response.products[i].images[0].src + "<div class='product'>" + response.products[i].title + "<div class='price'>" + '$ ' + response.products[i].variants[0].price + "<div class='description'>" + response.products[i].body_html + "<button class='buy'>Buy</button>"+ "</div>" + "</div>" + "</div>" + "</div>" + "</div>");
             }
         "</div>"
         }
