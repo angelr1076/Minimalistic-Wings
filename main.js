@@ -6,7 +6,7 @@ $(document).ready(function(){
     //Add your ajax call 
     $.ajax({
         type: 'GET',
-        url: 'http://www.redbullshopus.com/products.json',
+        url: 'https://www.redbullshopus.com/products.json',
         data: {
     //Your object will have one parameter for the title which the user can change by creating a variable for the local variable
         // products: {id: 1326503788615}
