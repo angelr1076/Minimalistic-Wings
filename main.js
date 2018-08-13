@@ -12,7 +12,7 @@ $(document).ready(function(){
         url: 'https://www.redbullshopus.com/products.json',
         data: {
     //Your object will have one parameter for the title which the user can change by creating a variable for the local variable
-        products: {id: 1326503788615}
+        products: {}
     },
     dataType: "json",
     success: function(response) {
@@ -32,11 +32,10 @@ $(document).ready(function(){
     //         type: 'GET',
     //         url: 'http://www.redbullshopus.com/products.json',
     //         data: {
-    //         title: input
+    //         products: input
     //     },
     //     success: function(response) {
     //         for (var i = 0; i < response.products.length; i++) {
-    //         // $('#title').html(response.Title)
     //         $('.image').append(response.products[i].images[0].src);
     //         $('.product').append(response.products[i].title);
     //         $('.price').append(response.products[i].variants[0].price);
